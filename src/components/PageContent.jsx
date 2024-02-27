@@ -1,4 +1,5 @@
 import React from "react";
+import FlippableImage from "./FlippableImage";
 
 const PageContent = () => {
   return (
@@ -9,18 +10,10 @@ const PageContent = () => {
       }}
     >
       <div className="grid">
-        <div className="grid-item">
-          <img src="https://source.unsplash.com/random/200x200?sig=1" />
-        </div>
-        <div className="grid-item">
-          <img src="https://source.unsplash.com/random/200x200?sig=1" />
-        </div>
-        <div className="grid-item">
-          <img src="https://source.unsplash.com/random/200x200?sig=1" />
-        </div>
-        <div className="grid-item">
-          <img src="https://source.unsplash.com/random/200x200?sig=1" />
-        </div>
+        <FlippableImage />
+        <FlippableImage />
+        <FlippableImage />
+        <FlippableImage />
       </div>
     </div>
   );

@@ -24,3 +24,51 @@
   height: 100%;
   object-fit: cover;
 }
+
+.grid-item .left,
+.grid-item .right,
+.grid-item .top,
+.grid-item .bottom {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item .left {
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+}
+
+.grid-item .right {
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+}
+
+.grid-item .top {
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.grid-item .bottom {
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/* .flip {
+  transform: rotate(180deg);
+} */
+
+/* img:hover {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+} */

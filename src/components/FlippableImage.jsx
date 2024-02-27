@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import ArrowIcon from "./ArrowIcon";
 
-const FlippableImage = () => {
+const FlippableImage = ({ imageFile }) => {
   const [hoveredSide, setHoveredSide] = useState(null);
   const [clickedSide, setClickedSide] = useState(null);
 
@@ -84,13 +85,13 @@ const FlippableImage = () => {
       >
         <ArrowIcon direction="bottom" />
       </div>
-      <img
-        src="https://source.unsplash.com/random/200x200?sig=1"
-        alt="random"
-        style={getImageStyles()}
-      />
+      <img src={imageFile} alt="random" style={getImageStyles()} />
     </div>
   );
+};
+
+FlippableImage.propTypes = {
+  imageFile: PropTypes.string.isRequired,
 };
 
 export default FlippableImage;

@@ -9,6 +9,9 @@ const PageContent = () => {
         padding: "20px",
       }}
     >
+      <p style={{ fontSize: 20, paddingBottom: 10 }}>
+        Mobile users please press on the sides of the images to flip them.
+      </p>
       <div className="grid">
         <FlippableImage />
         <FlippableImage />
